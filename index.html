@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>justmedev</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/tailwind-prod.css"/>
+    <link rel="stylesheet" href="css/additional.css"/>
+    <link rel="stylesheet" href="css/syntax.css"/>
+    <link rel="stylesheet" href="css/terminal.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="base.js"></script>
+</head>
+<body class="out-container" id="outerContainer">
+<div class="m-auto w-container bg-accent-3 h-screen" id="container">
+    <!--  Navbar  -->
+    <header class="nav-svg m-auto px-2">
+        <img src="/svg/logo.svg" alt="Logo" class="h-11 float-left logo ml-2" onclick="window.location.href = '/'">
+
+        <!--    Icons    -->
+        <div class="mx-1 float-right icon discord-icon"
+             onclick="window.open('https://github.com/justmedev/justmedev.github.io/')"></div>
+        <div class="mx-1 float-right icon github-icon"
+             onclick="window.open('https://github.com/justmedev/justmedev.github.io/')"></div>
+        <div class="mx-1 float-right icon terminal-icon hidden" id="terminalIcon"
+             onclick="openTerminal()"></div>
+    </header>
+
+    <!--  Sections  -->
+    <main>
+        <section>
+            <div class="header bg-primary m-auto w-fit animate__animated animate__zoomInDown mt-3">
+                <div class="syntaxhighlight roboto-mono flex flex-row">
+                    <div class="class">console</div>
+                    <div class="brackets">.</div>
+                    <div class="function">log</div>
+                    <div class="brackets">(</div>
+                    <div class="string">'Hello World!'</div>
+                    <div class="brackets">)</div>
+                    <div class="semi">;</div>
+                </div>
+            </div>
+            <div class="content  animate__animated animate__fadeInLeft mt-1.5">
+                Hey! I am Ilja B., 14. I am an experienced web developer. I have worked with multiple tools listed
+                below.
+                You need anything? DM me on Discord: JustMe#8491.
+            </div>
+        </section>
+        <section class="mt-24">
+            <div class="header bg-primary m-auto w-fit animate__animated animate__zoomInDown mt-3">
+                <div class="syntaxhighlight roboto-mono flex flex-row">
+                    <div class="async">await</div>
+                    <div class="function ml-2.5">fetch</div>
+                    <div class="brackets">(</div>
+                    <div class="string">'/projects'</div>
+                    <div class="brackets">)</div>
+                    <div class="semi">;</div>
+                </div>
+            </div>
+
+            <div class="projects">
+                <!--       Busket        -->
+                <div class="bg-primary h-card card-padding flex flex-row">
+                    <div class="mr-0.5">
+                        <img src="svg/img_placeholder.svg" alt="img">
+                    </div>
+                    <div>
+                        <div class="card-title flex flex-row pt-1.5">
+                            <a class="card-widget card-btn" href="https://github.com/justmedev/busket-frontend"
+                               target="_blank">
+                                <img src="svg/github.svg" alt="Github repo" class="m-auto h-4">
+                            </a>
+                            busket
+                        </div>
+                        <div class="card-content ml-1">
+                            A small self-made web shopping list.
+                        </div>
+                        <div class="card-information">
+                            <div class="mt-6 flex flex-row justify-between">
+                                <div class="card-info-widget flex flex-row" title="Status">
+                                    <img src="svg/widget/wip.svg" alt="Work in progress" class="mr-2">WORK IN PROGRESS
+                                </div>
+                                <div class="card-info-widget flex flex-row" title="Made with">
+                                    <img src="svg/widget/icon-feathers.svg" alt="FeathersJS" class="m-1"
+                                         title="FeathersJS">
+                                    <img src="svg/widget/icon-vue.svg" alt="Vue" class="m-1" title="Vue">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--       Portfolio        -->
+                <div class="bg-primary h-card card-padding flex flex-row">
+                    <div class="mr-0.5">
+                        <img src="svg/img_placeholder.svg" alt="img">
+                    </div>
+                    <div>
+                        <div class="card-title flex flex-row pt-1.5">
+                            <a class="card-widget card-btn" href="https://github.com/justmedev/justmedev.github.io"
+                               target="_blank">
+                                <img src="svg/github.svg" alt="Github repo" class="m-auto h-4">
+                            </a>
+                            my portfolio
+                        </div>
+                        <div class="card-content ml-1">
+                            Made to inform people about my work.
+                        </div>
+                        <div class="card-information">
+                            <div class="mt-6 flex flex-row justify-between">
+                                <div class="card-info-widget flex flex-row" title="Status">
+                                    <img src="svg/widget/done.svg" alt="Done" class="mr-2">DONE
+                                </div>
+                                <div class="card-info-widget flex flex-row" title="Made with">
+                                    <img src="svg/widget/tailwind.svg" alt="TailwindCSS" class="my-1.5 ml-0.5 h-3"
+                                         title="TailwindCSS">
+                                    <img src="png/css3.png" alt="CSS3" class="m-0.5 h-5" title="CSS3">
+                                    <img src="png/html5.png" alt="HTML5" class="m-0.5 h-5" title="HTML5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="terminal__main hidden" id="terminal">
+        <div class="terminal__top flex flex-row justify-between" id="draggableTerminal">
+            <div>cmd.exe</div>
+            <div class="terminal__actions">
+                <button onclick="openTerminal()" class="px-3 transition-all duration-300 hover:bg-gray-200">–</button>
+                <button onclick="openTerminal()" class="px-3 transition-all duration-300 hover:bg-gray-200">▢</button>
+                <button onclick="closeTerminal()" class="px-3 transition-all duration-300 hover:bg-red-500">✕</button>
+            </div>
+        </div>
+        <div class="terminal__content" onclick="$('#terminalInput').focus()">
+            <div id="terminalContent">
+                Microsoft Windows [Version 10.0.22000.100]
+                <br />
+                (c) Microsoft Corporation. All rights reserved.
+                <div class="my-3"></div>
+            </div>
+            <label>
+                C:\Users\justmedev\github\website><input class="bg-transparent outline-none" spellcheck="false" id="terminalInput">
+            </label>
+        </div>
+    </div>
+</div>
+</body>
+</html>

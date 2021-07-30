@@ -1,0 +1,169 @@
+/* Container */
+.w-container {
+    width: 1196px;
+    max-width: 1196px;
+}
+
+.out-container {
+    background: #162838;
+}
+
+/* Navbar */
+.nav-svg {
+    background-image: url("/svg/nav.svg");
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    height: 82px;
+}
+
+.nav-svg > .logo {
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.nav-svg > .icon {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.nav-svg > .terminal-icon {
+    background-image: url("/svg/terminal.svg");
+    height: 18px;
+    width: 23px;
+    transition: all .2s;
+}
+
+.nav-svg > .discord-icon {
+    background-image: url("/svg/discord.svg");
+    height: 17px;
+    width: 22px;
+    transition: all .2s;
+}
+
+.nav-svg > .github-icon {
+    background-image: url("/svg/github.svg");
+    height: 20px;
+    width: 21px;
+    transition: all .2s;
+}
+
+.nav-svg > .icon:hover {
+    filter: brightness(1.3);
+    transform: scale(1.2, 1.2);
+    transition: all .2s;
+}
+
+/* Color palette */
+
+/* Cards */
+.primary {
+    color: #0E2B45;
+}
+
+.bg-primary {
+    background: #0E2B45;
+}
+
+/* navbar + footer */
+.accent {
+    color: #0E3152;
+}
+
+.bg-accent {
+    background: #0E3152;
+}
+
+/* Card buttons */
+.accent-2 {
+    color: #0E385C;
+}
+
+.bg-accent-2 {
+    background: #0E385C;
+}
+
+/* Dark background */
+.accent-3 {
+    color: #081F34;
+}
+
+.bg-accent-3 {
+    background: #081F34;
+}
+
+
+.w-fit {
+    width: fit-content;
+}
+
+.roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.syntaxhighlight {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.h-card {
+    height: 165px;
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 42px;
+}
+
+.card-title {
+    font-family: 'Roboto Mono', monospace;
+    font-variant: small-caps;
+    line-height: 16px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 38px;
+}
+
+.card-widget {
+    background: #0E385C;
+    width: 1.7rem;
+    height: 1.7rem;
+    padding-top: 5px;
+    margin-right: 6px;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, .25) 0 4px 4px 0;
+    transition: all .2s;
+}
+
+.card-info-widget {
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    background: #0E385C;
+    box-shadow: rgba(0, 0, 0, .25) 0 3px 4px 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 8px 5px 6px;
+    margin-right: 6px;
+    border-radius: 9px;
+    font-variant: small-caps;
+}
+
+.card-btn {
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background: #0b253b;
+    box-shadow: rgba(0, 0, 0, .29) 0 4px 4px 0;
+    transition: all .2s;
+}
+
+.card-padding {
+    padding: 1.1rem;
+}
+
+.card-content {
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 23px;
+}

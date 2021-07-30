@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header {
+    @apply px-4 py-3 flex justify-center;
+    border-radius: 18px;
+    font-size: 21px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, .12) 0 5px 9px;
+  }
+
+  .content {
+    @apply m-auto text-white text-center;
+    font-size: 19px;
+    font-weight: 500;
+    max-width: 800px;
+  }
+}

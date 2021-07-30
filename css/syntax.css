@@ -1,0 +1,19 @@
+.string {
+    color: #63C554;
+}
+.class {
+    color: #E5951D;
+}
+.function {
+    color: #13AAEB;
+}
+.brackets {
+    color: #fff;
+}
+.semi {
+    color: #979797;
+}
+
+.async {
+    color: #B220A4;
+}

@@ -1,0 +1,26 @@
+.terminal__main {
+    background: #000;
+    width: 1000px;
+    height: 550px;
+    border-radius: 10px;
+    position: absolute;
+    top: 15vh;
+    right: 25vh;
+    z-index: 98;
+}
+
+.terminal__top {
+    background: #fff;
+    padding: 0 5px 0 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 99;
+    cursor: move;
+}
+
+.terminal__content {
+    color: #fff;
+    height: 526px;
+    font-family: 'Roboto Mono', monospace;
+    overflow-y: scroll;
+}
