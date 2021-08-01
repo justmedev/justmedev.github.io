@@ -93,7 +93,7 @@
 
 .w-fit {
     width: fit-content;
-    display: table; /* Cross browser */
+    width: -moz-fit-content;
 }
 
 .roboto-mono {
@@ -141,7 +141,9 @@
     background: #0E385C;
     box-shadow: rgba(0, 0, 0, .25) 0 3px 4px 0;
     width: fit-content;
+    width: -moz-fit-content;
     height: fit-content;
+    height: -moz-fit-content;
     padding: 5px 8px 5px 6px;
     margin-right: 6px;
     border-radius: 9px;
